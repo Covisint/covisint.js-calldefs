@@ -1,0 +1,18 @@
+[{
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  }, {
+    "cmd": "orchestrate",
+    "call": "/orchestrate",
+    "type": "POST",
+    "accepts": "application/json",
+    "contentType": "application/vnd.com.covisint.platform.messaging.server.orchestration.v1+json"
+  }, {
+    "cmd": "testOrchestration",
+    "call": "/composer/v1/composer/verifyOrchestration",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.messaging.server.orchestration.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.messaging.server.orchestration.v1+json"
+  }
+]

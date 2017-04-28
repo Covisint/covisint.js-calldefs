@@ -1,0 +1,33 @@
+[{
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  }, {
+    "cmd": "getEventAudits",
+    "call": "/eventaudit/v1/eventAudits",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.messaging.eventAudit.v1+json"
+  }, {
+    "cmd": "createEventAudit",
+    "call": "/eventaudit/v1/eventAudits",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.messaging.eventAudit.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.messaging.eventAudit.v1+json"
+  }, {
+    "cmd": "updateEventAudit",
+    "call": "/eventaudit/v1/eventAudits",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.messaging.eventAudit.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.messaging.eventAudit.v1+json"
+  }, {
+    "cmd": "deleteEventAudits",
+    "call": "/eventaudit/v1/eventAudits",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.messaging.eventAudit.v1+json"
+  }, {
+    "cmd": "countEventAudits",
+    "call": "/eventaudit/v1/eventAudits/count",
+    "type": "GET",
+    "accepts": "text/plain"
+  }
+]

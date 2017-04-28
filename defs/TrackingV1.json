@@ -1,0 +1,21 @@
+[{
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  }, {
+    "cmd": "getTracking",
+    "call": "/tracking/v1/trackings?sortBy=-creation",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.messaging.tracking.v1+json"
+  }, {
+    "cmd": "getTrackingSubprocess",
+    "call": "/tracking/v1/subprocesses?sortBy=-creation&messageId={messageId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.messaging.subprocess.v1+json"
+  }, {
+    "cmd": "getProcessorAudits",
+    "call": "/tracking/v1/processorAudits?sortBy=-creation&messageId={messageId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.messaging.processoraudit.v1+json"
+  }
+]

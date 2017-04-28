@@ -1,0 +1,72 @@
+[
+  {
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  },
+  {
+    "cmd": "getOrganizations",
+    "cmdType": "secured",
+    "call": "/organization/v3/organizations",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.organization.v1+json"
+  },
+  {
+    "cmd": "createOrganization",
+    "cmdType": "unsecured",
+    "call": "/organization/v3/organizations",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.organization.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.organization.v1+json"
+  },
+  {
+    "cmd": "countOrganizations",
+    "cmdType": "unsecured",
+    "call": "/organization/v3/organizations/count",
+    "type": "GET",
+    "accepts": "text/plain"
+  },
+  {
+    "cmd": "getOrganizationRequests",
+    "cmdType": "unsecured",
+    "call": "/organization/v3/organizations/requests",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.organization.request.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.organization.request.v1+json"
+  },
+  {
+    "cmd": "approveOrganizationRequests",
+    "call": "/organization/v3/organizations/requests/tasks/approve",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.organization.request.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.organization.request.v1+json"
+  },
+  {
+    "cmd": "denyOrganizationRequests",
+    "call": "/organization/v3/organizations/requests/tasks/deny",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.organization.request.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.organization.request.v1+json"
+  },
+  {
+    "cmd": "getOrganization",
+    "cmdType": "secured",
+    "call": "/organization/v3/organizations/{organizationId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.organization.v1+json"
+  },
+  {
+    "cmd": "updateOrganization",
+    "cmdType": "unsecured",
+    "call": "/organization/v3/organizations/{organizationId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.organization.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.organization.v1+json"
+  },
+  {
+    "cmd": "getOrganizationHierarchy",
+    "call": "/organization/v3/organizations/{organizationId}/hierarchy",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.reference.hierarchy.v1+json"
+  }
+]

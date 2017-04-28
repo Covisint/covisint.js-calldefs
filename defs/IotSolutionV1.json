@@ -1,0 +1,18 @@
+[{
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  }, {
+    "cmd": "createDocumentInfo",
+    "call": "/iotsolution/v1/documentinfo",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.messaging.server.document-info.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.messaging.server.document-info.v1+json"
+  }, {
+    "cmd": "getDocumentInfo",
+    "call": "/iotsolution/v1/documentinfo/{docInfoId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.messaging.server.document-info.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.messaging.server.document-info.v1+json"
+  }
+]

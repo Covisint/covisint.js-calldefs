@@ -1,0 +1,27 @@
+[
+  {
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  },
+  {
+    "cmd": "getTokens",
+    "call": "/oauth/v3/token",
+    "type": "GET",
+    "accepts": "application/json"
+  },
+  {
+    "cmd": "introspectToken",
+    "call": "/oauth/v3/introspect",
+    "type": "POST",
+    "accepts": "application/json",
+    "contentType": "application/x-www-form-urlencoded"
+  },
+  {
+    "cmd": "revokeToken",
+    "call": "/oauth/v3/revoke",
+    "type": "POST",
+    "accepts": "application/json",
+    "contentType": "application/x-www-form-urlencoded"
+  }
+]

@@ -1,0 +1,221 @@
+[
+  {
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  },
+  {
+    "cmd": "getPersons",
+    "call": "/person/v3/persons",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.person.v1+json"
+  },
+  {
+    "cmd": "createPerson",
+    "call": "/person/v3/persons",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.person.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.v1+json"
+  },
+  {
+    "cmd": "getPersonsAdmins",
+    "call": "/person/v3/persons",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.person.v1+json;securityadmin=true"
+  },
+  {
+    "cmd": "countPersons",
+    "call": "/person/v3/persons/count",
+    "type": "GET",
+    "accepts": "text/plain"
+  },
+  {
+    "cmd": "getPersonRolesOnly",
+    "call": "/person/v3/persons/roles/{personId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.person.role.v1+json;onlyroles=true"
+  },
+  {
+    "cmd": "getPersonRoles",
+    "call": "/person/v3/persons/roles/{personId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.person.role.v1+json"
+  },
+  {
+    "cmd": "registerPerson",
+    "cmdType": "unsecured",
+    "call": "/person/v3/persons/registration",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.person.password.account.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.password.account.v1+json"
+  },
+  {
+    "cmd": "getRegistrationStatus",
+    "call": "/person/v3/persons/registration/status",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.person.password.account.v1+json"
+  },
+  {
+    "cmd": "validateRegistration",
+    "cmdType": "unsecured",
+    "call": "/person/v3/persons/registration/validate",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.person.password.account.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.password.account.v1+json"
+  },
+  {
+    "cmd": "getPersonAttributes",
+    "call": "/person/v3/persons/{personId}/templates",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.person.attribute.template.v1+json"
+  },
+  {
+    "cmd": "updatePersonAttributes",
+    "call": "/person/v3/persons/{personId}/templates",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.person.attribute.template.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.attribute.template.v1+json"
+  },
+  {
+    "cmd": "deletePersonAttributes",
+    "call": "/person/v3/persons/{personId}/templates",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.person.attribute.template.v1+json"
+  },
+  {
+    "cmd": "validatePassword",
+    "cmdType": "unsecured",
+    "call": "/person/v3/persons/password/validate",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.password.validation.response.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.password.validation.v1+json"
+  },
+  {
+    "cmd": "getPerson",
+    "call": "/person/v3/persons/{personId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.person.v1+json"
+  },
+  {
+    "cmd": "updatePerson",
+    "call": "/person/v3/persons/{personId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.person.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.v1+json"
+  },
+  {
+    "cmd": "activatePerson",
+    "call": "/person/v3/persons/tasks/activate",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.person.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.v1+json"
+  },
+  {
+    "cmd": "suspendPerson",
+    "call": "/person/v3/persons/tasks/suspend",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.person.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.v1+json"
+  },
+  {
+    "cmd": "unsuspendPerson",
+    "call": "/person/v3/persons/tasks/unsuspend",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.person.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.v1+json"
+  },
+  {
+    "cmd": "getPersonInvitations",
+    "call": "/person/v3/personInvitations",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.person.invitation.v1+json"
+  },
+  {
+    "cmd": "createPersonInvitation",
+    "call": "/person/v3/personInvitations",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.person.invitation.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.invitation.v1+json"
+  },
+  {
+    "cmd": "getPersonInvitation",
+    "cmdType": "unsecured",
+    "call": "/person/v3/personInvitations/{invitationId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.person.invitation.v1+json"
+  },
+  {
+    "cmd": "deletePersonInvitation",
+    "cmdType": "unsecured",
+    "call": "/person/v3/personInvitations/{invitationId}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.person.invitation.v1+json"
+  },
+  {
+    "cmd": "acceptPersonInvitation",
+    "call": "/person/v3/personInvitations/tasks/accept",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.person.invitation.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.invitation.v1+json"
+  },
+  {
+    "cmd": "getPersonRequests",
+    "call": "/person/v3/requests",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.person.request.v1+json"
+  },
+  {
+    "cmd": "createPersonRequest",
+    "cmdType": "unsecured",
+    "call": "/person/v3/requests",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.person.request.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.request.v1+json"
+  },
+  {
+    "cmd": "getPersonRequest",
+    "call": "/person/v3/requests/{requestId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.person.request.v1+json"
+  },
+  {
+    "cmd": "deletePersonRequest",
+    "call": "/person/v3/requests/{requestId}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.person.request.v1+json"
+  },
+  {
+    "cmd": "approvePersonRequest",
+    "call": "/person/v3/requests/tasks/approve",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.person.request.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.request.v1+json"
+  },
+  {
+    "cmd": "denyPersonRequest",
+    "call": "/person/v3/requests/tasks/deny",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.person.request.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.request.v1+json"
+  },
+  {
+    "cmd": "getPersonPassword",
+    "call": "/person/v3/persons/{personId}/accounts/password",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.person.account.password.v1+json"
+  },
+  {
+    "cmd": "createPersonPassword",
+    "call": "/person/v3/persons/{personId}/accounts/password",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.person.account.password.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.account.password.v1+json"
+  },
+  {
+    "cmd": "updatePersonPassword",
+    "call": "/person/v3/persons/{personId}/accounts/password",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.person.account.password.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.account.password.v1+json"
+  }
+]

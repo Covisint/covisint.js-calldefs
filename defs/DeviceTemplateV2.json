@@ -1,0 +1,51 @@
+[{
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  }, 
+  {
+    "cmd": "getDeviceTemplates",
+    "call": "/devicetemplate/v1/deviceTemplates",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.deviceTemplate.v1+json;fetchattributetypes=true;fetcheventtemplates=true;fetchcommandtemplates=true"
+  }, {
+    "cmd": "createDeviceTemplate",
+    "call": "/devicetemplate/v1/deviceTemplates",
+    "delayForIndex": true,
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.deviceTemplate.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.deviceTemplate.v1+json"
+  }, {
+    "cmd": "createDeviceTemplateTag",
+    "call": "/devicetemplate/v1/deviceTemplates/{deviceTemplateId}/tags/{tag}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.deviceTemplate.v1+json"
+  }, {
+    "cmd": "deleteDeviceTemplateTag",
+    "call": "/devicetemplate/v1/deviceTemplates/{deviceTemplateId}/tags/{tag}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.deviceTemplate.v1+json"
+  }, {
+    "cmd": "getDeviceTemplate",
+    "call": "/devicetemplate/v1/deviceTemplates/{deviceTemplateId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.deviceTemplate.v1+json;fetchattributetypes=true;fetcheventtemplates=true;fetchcommandtemplates=true"
+  }, {
+    "cmd": "activateDeviceTemplate",
+    "call": "/devicetemplate/v1/deviceTemplates/{deviceTemplateId}/tasks/activate",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.deviceTemplate.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.deviceTemplate.v1+json"
+  }, {
+    "cmd": "deactivateDeviceTemplate",
+    "call": "/devicetemplate/v1/deviceTemplates/{deviceTemplateId}/tasks/deactivate",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.deviceTemplate.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.deviceTemplate.v1+json"
+  }, {
+    "cmd": "countDeviceTemplates",
+    "call": "/devicetemplate/v1/deviceTemplates/count",
+    "type": "GET",
+    "accepts": "text/plain"
+  }
+]

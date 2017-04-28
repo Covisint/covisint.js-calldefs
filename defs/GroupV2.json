@@ -1,0 +1,89 @@
+[
+  {
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  },
+  {
+    "cmd": "getGroups",
+    "call": "/group/v2/groups",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.group.v1+json;includeEntitlements"
+  },
+  {
+    "cmd": "createGroup",
+    "call": "/group/v2/groups",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.group.v1+json;includeEntitlements",
+    "contentType": "application/vnd.com.covisint.platform.group.v1+json;includeEntitlements"
+  },
+  {
+    "cmd": "getGroup",
+    "call": "/group/v2/groups/{groupId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.group.v1+json;includeEntitlements"
+  },
+  {
+    "cmd": "updateGroup",
+    "call": "/group/v2/groups/{groupId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.group.v1+json;includeEntitlements",
+    "contentType": "application/vnd.com.covisint.platform.group.v1+json;includeEntitlements"
+  },
+  {
+    "cmd": "getGroupEntitlements",
+    "call": "/group/v2/groups/{groupId}/entitlements",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.group.entitlement.v1+json"
+  },
+  {
+    "cmd": "createGroupEntitlement",
+    "call": "/group/v2/groups/{groupId}/entitlements",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.group.entitlement.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.group.entitlement.v1+json"
+  },
+  {
+    "cmd": "getGroupEntitlement",
+    "call": "/group/v2/groups/{groupId}/entitlements/{groupEntitlementId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.group.entitlement.v1+json"
+  },
+  {
+    "cmd": "deleteGroupEntitlement",
+    "call": "/group/v2/groups/{groupId}/entitlements/{groupEntitlementId}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.group.entitlement.v1+json"
+  },
+  {
+    "cmd": "createGroupMemberships",
+    "call": "/group/v2/groups/{groupId}/memberships",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.group.membership.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.group.membership.v1+json"
+  },
+  {
+    "cmd": "getGroupMemberships",
+    "call": "/group/v2/groups/{groupId}/memberships",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.group.membership.v1+json;includeGroupAndEntitlements;includeGroup"
+  },
+  {
+    "cmd": "getGroupMembership",
+    "call": "/group/v2/groups/{groupId}/memberships/{groupMembershipId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.group.membership.v1+json"
+  },
+  {
+    "cmd": "deleteGroupMembership",
+    "call": "/group/v2/groups/{groupId}/memberships/{groupMembershipId}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.group.membership.v1+json"
+  },
+  {
+    "cmd": "getMemberMemberships",
+    "call": "/group/v2/memberships",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.group.membership.v1+json;includeGroupAndEntitlements;includeGroup"
+  }
+]

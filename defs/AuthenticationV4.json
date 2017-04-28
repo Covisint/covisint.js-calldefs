@@ -1,0 +1,113 @@
+[
+  {
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  },
+  {
+    "cmd": "getSecurityQuestions",
+    "cmdType": "secured",
+    "call": "/authn/v4/securityQuestions",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.securityquestion.v1+json"
+  },
+  {
+    "cmd": "createSecurityQuestions",
+    "call": "/authn/v4/securityQuestions/{personId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.securityquestion.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.securityquestion.v1+json"
+  },
+  {
+    "cmd": "updateSecurityQuestions",
+    "call": "/authn/v4/securityQuestions/{personId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.securityquestion.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.securityquestion.v1+json"
+  },
+  {
+    "cmd": "authnNonceValidate",
+    "cmdType": "unsecured",
+    "call": "/authn/v4/authn/nonce/validate",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.authn.nonce.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.authn.nonce.v1+json"
+  },
+  {
+    "cmd": "sessionNonceValidate",
+    "cmdType": "unsecured",
+    "call": "/authn/v4/sessionToken/nonce/validate",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.nonce.request.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.nonce.request.v1+json"
+  },
+  {
+    "cmd": "getSecurityQuestionAccount",
+    "cmdType": "secured",
+    "call": "/authn/v4/persons/{personId}/accounts/securityQuestion",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.person.account.securityQuestion.v1+json"
+  },
+  {
+    "cmd": "createSecurityQuestionAccount",
+    "call": "/authn/v4/persons/{personId}/accounts/securityQuestion",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.person.account.securityQuestion.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.account.securityQuestion.v1+json"
+  },
+  {
+    "cmd": "updateSecurityQuestionAccount",
+    "call": "/authn/v4/persons/{personId}/accounts/securityQuestion",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.person.account.securityQuestion.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.person.account.securityQuestion.v1+json"
+  },
+  {
+    "cmd": "authenticatePassword",
+    "call": "/authn/v4/passwords/tasks/authenticate",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.authn.password.resp.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.authn.password.resp.v1+json"
+  },
+  {
+    "cmd": "lockPassword",
+    "call": "/authn/v4/passwords/tasks/lock",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.password.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.password.v1+json"
+  },
+  {
+    "cmd": "unlockPassword",
+    "call": "/authn/v4/passwords/tasks/unlock",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.password.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.password.v1+json"
+  },
+  {
+    "cmd": "getPasswordPolicies",
+    "call": "/authn/v4/passwords/policies",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.password.policy.v1+json"
+  },
+  {
+    "cmd": "createPasswordPolicies",
+    "call": "/authn/v4/passwords/policies",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.password.policy.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.password.policy.v1+json"
+  },
+  {
+    "cmd": "getPasswordPolicy",
+    "cmdType": "unsecured",
+    "call": "/authn/v4/passwords/policies/{policyId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.password.policy.v1+json"
+  },
+  {
+    "cmd": "deletePasswordPolicy",
+    "cmdType": "unsecured",
+    "call": "/authn/v4/passwords/policies/{policyId}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.password.policy.v1+json"
+  }
+]

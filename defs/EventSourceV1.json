@@ -1,0 +1,50 @@
+[{
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  }, 
+  {
+    "cmd": "getEventSources",
+    "call": "/eventsource/v1/eventSources",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.eventSource.v1+json"
+  }, {
+    "cmd": "createEventSource",
+    "call": "/eventsource/v1/eventSources",
+    "delayForIndex": true,
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.eventSource.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.eventSource.v1+json"
+  }, {
+    "cmd": "createEventSourceTag",
+    "call": "/eventsource/v1/eventSources/{eventSourceId}/tags/{tag}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.eventSource.v1+json"
+  }, {
+    "cmd": "deleteEventSourceTag",
+    "call": "/eventsource/v1/eventSources/{eventSourceId}/tags/{tag}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.eventSource.v1+json"
+  }, {
+    "cmd": "getEventSource",
+    "call": "/eventsource/v1/eventSources/{eventSourceId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.eventSource.v1+json"
+  }, {
+    "cmd": "updateEventSource",
+    "call": "/eventsource/v1/eventSources/{eventSourceId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.eventSource.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.eventSource.v1+json"
+  }, {
+    "cmd": "deleteEventSource",
+    "call": "/eventsource/v1/eventSources/{eventSourceId}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.eventSource.v1+json"
+  }, {
+    "cmd": "countEventSources",
+    "call": "/eventsource/v1/eventSources/count",
+    "type": "GET",
+    "accepts": "text/plain"
+  } 
+]

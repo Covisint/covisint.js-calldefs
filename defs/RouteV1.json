@@ -1,0 +1,39 @@
+[{
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  }, {
+    "cmd": "getRoutes",
+    "call": "/route/v1/routes",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.messaging.route.v1+json"
+  }, {
+    "cmd": "createRoute",
+    "call": "/route/v1/routes",
+    "delayForIndex": true,
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.messaging.route.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.messaging.route.v1+json"
+  }, {
+    "cmd": "getRoute",
+    "call": "/route/v1/routes/{routeId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.messaging.route.v1+json"
+  }, {
+    "cmd": "updateRoute",
+    "call": "/route/v1/routes/{routeId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.messaging.route.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.messaging.route.v1+json"
+  }, {
+    "cmd": "deleteRoute",
+    "call": "/route/v1/routes/{routeId}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.messaging.route.v1+json"
+  }, {
+    "cmd": "countRoutes",
+    "call": "/route/v1/routes/count",
+    "type": "GET",
+    "accepts": "text/plain"
+  }
+]

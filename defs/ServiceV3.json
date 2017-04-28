@@ -1,0 +1,172 @@
+[
+  {
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  },
+  {
+    "cmd": "getServices",
+    "call": "/service/v3/services",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.service.v1+json"
+  },
+  {
+    "cmd": "createService",
+    "call": "/service/v3/services",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.service.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.service.v1+json"
+  },
+  {
+    "cmd": "getService",
+    "call": "/service/v3/services/{serviceId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.service.v1+json"
+  },
+  {
+    "cmd": "getPackageServices",
+    "call": "/service/v3/packages/{packageId}/services",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.service.v1+json"
+  },
+  {
+    "cmd": "getPackages",
+    "call": "/service/v3/packages",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.package.v1+json"
+  },
+  {
+    "cmd": "createPackage",
+    "call": "/service/v3/packages",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.package.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.package.v1+json"
+  },
+  {
+    "cmd": "countPackages",
+    "call": "/service/v3/packages/count",
+    "type": "GET",
+    "accepts": "text/plain"
+  },
+  {
+    "cmd": "getRequestablePersonPackages",
+    "call": "/service/v3/packages/persons/{personId}/requestable",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.package.v1+json"
+  },
+  {
+    "cmd": "getRequestableOrganizationPackages",
+    "call": "/service/v3/packages/organizations/{organizationId}/requestable",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.package.v1+json"
+  },
+  {
+    "cmd": "getPackage",
+    "cmdType": "unsecured",
+    "call": "/service/v3/packages/{packageId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.package.v1+json"
+  },
+  {
+    "cmd": "assignService",
+    "call": "/service/v3/packages/tasks/assignServiceMembership",
+    "type": "POST"
+  },
+  {
+    "cmd": "removeService",
+    "call": "/service/v3/packages/tasks/removeServiceMembership",
+    "type": "POST"
+  },
+  {
+    "cmd": "getPersonPackages",
+    "call": "/service/v3/persons/{personId}/packages",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.package.grant.v1+json"
+  },
+  {
+    "cmd": "getPersonPackage",
+    "call": "/service/v3/persons/{personId}/packages/{packageId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.package.grant.v1+json"
+  },
+  {
+    "cmd": "grantPersonPackage",
+    "call": "/service/v3/persons/{personId}/packages/{packageId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.package.grant.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.package.grant.v1+json"
+  },
+  {
+    "cmd": "getOrganizationPackages",
+    "cmdType": "unsecured",
+    "call": "/service/v3/organizations/{organizationId}/packages",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.package.grant.v1+json"
+  },
+  {
+    "cmd": "getOrganizationPackage",
+    "call": "/service/v3/organizations/{organizationId}/packages/{packageId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.package.grant.v1+json"
+  },
+  {
+    "cmd": "grantOrganizationPackage",
+    "call": "/service/v3/organizations/{organizationId}/packages/{packageId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.package.grant.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.package.grant.v1+json"
+  },
+  {
+    "cmd": "getPackageRequests",
+    "call": "/service/v3/requests",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.package.request.v1+json"
+  },
+  {
+    "cmd": "createPackageRequest",
+    "call": "/service/v3/requests",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.package.request.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.package.request.v1+json"
+  },
+  {
+    "cmd": "getPackageRequest",
+    "call": "/service/v3/requests/{requestId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.package.request.v1+json"
+  },
+  {
+    "cmd": "deletePackageRequest",
+    "call": "/service/v3/requests/{requestId}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.package.request.v1+json"
+  },
+  {
+    "cmd": "approvePackageRequest",
+    "call": "/service/v3/requests/tasks/approve",
+    "type": "POST"
+  },
+  {
+    "cmd": "denyPackageRequest",
+    "call": "/service/v3/requests/tasks/deny",
+    "type": "POST"
+  },
+  {
+    "cmd": "getPackageGrants",
+    "call": "/service/v3/grants",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.package.grant.v1"
+  },
+  {
+    "cmd": "getPersonClaims",
+    "call": "/service/v3/persons/{personId}/claims",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.package.grant.claim.v1"
+  },
+  {
+    "cmd": "getPersonPackageClaims",
+    "call": "/service/v3/persons/{personId}/packages/{packageId}/claims",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.package.grant.claim.v1"
+  }
+]

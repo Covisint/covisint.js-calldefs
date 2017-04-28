@@ -1,0 +1,40 @@
+[{
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  }, {
+    "cmd": "getEventThresholds",
+    "call": "/eventthresholdpolicy/v1/eventTemplates/{eventTemplateId}/thresholdPolicies",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.eventThresholdPolicy.v1+json"
+  }, {
+    "cmd": "createEventThreshold",
+    "call": "/eventthresholdpolicy/v1/eventTemplates/{eventTemplateId}/thresholdPolicies",
+    "delayForIndex": true,
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.eventThresholdPolicy.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.eventThresholdPolicy.v1+json"
+  }, {
+    "cmd": "getEventThreshold",
+    "call": "/eventthresholdpolicy/v1/eventTemplates/{eventTemplateId}/thresholdPolicies/{eventPolicyId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.eventThresholdPolicy.v1+json"
+  }, {
+    "cmd": "updateEventThreshold",
+    "call": "/eventthresholdpolicy/v1/eventTemplates/{eventTemplateId}/thresholdPolicies/{eventPolicyId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.eventThresholdPolicy.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.eventThresholdPolicy.v1+json"
+  }, {
+    "cmd": "deleteEventThreshold",
+    "call": "/eventthresholdpolicy/v1/eventTemplates/{eventTemplateId}/thresholdPolicies/{eventPolicyId}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.eventThresholdPolicy.v1+json"
+  }, {
+    "cmd": "validateEventThresholdPolicy",
+    "call": "/eventthresholdpolicy/v1/eventTemplates/{eventTemplateId}/thresholdPolicies/{eventPolicyId}/validateEvent",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.application/json",
+    "contentType": "application/vnd.com.covisint.platform.application/json"
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  },
+  {
+    "cmd": "getAttributes",
+    "call": "/attributes/v1/attributes",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.attribute.v1+json"
+  },
+  {
+    "cmd": "createAttribute",
+    "call": "/attributes/v1/attributes",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.attribute.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.attribute.v1+json"
+  },
+  {
+    "cmd": "getAttribute",
+    "cmdType": "unsecured",
+    "call": "/attributes/v1/attributes/{attributeId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.attribute.v1+json"
+  },
+  {
+    "cmd": "updateAttribute",
+    "cmdType": "unsecured",
+    "call": "/attributes/v1/attributes/{attributeId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.attribute.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.attribute.v1+json"
+  },
+  {
+    "cmd": "deleteAttribute",
+    "cmdType": "unsecured",
+    "call": "/attributes/v1/attributes/{attributeId}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.attribute.v1+json"
+  },
+  {
+    "cmd": "getAttributeTemplates",
+    "cmdType": "unsecured",
+    "call": "/attributes/v1/attributeTemp
+    lates",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.attribute.template.v1+json"
+  },
+  {
+    "cmd": "getAttributeTemplate",
+    "cmdType": "unsecured",
+    "call": "/attributes/v1/attributeTemplates/{attributeTemplateId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.attribute.template.v1+json"
+  },
+  {
+    "cmd": "deleteAttributeTemplate",
+    "cmdType": "unsecured",
+    "call": "/attributes/v1/attributeTemplates/{attributeTemplateId}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.attribute.template.v1+json"
+  },
+  {
+    "cmd": "createAttributeTemplate",
+    "cmdType": "unsecured",
+    "call": "/attributes/v1/attributeTemplates/{attributeTemplateId}",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.attribute.template.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.attribute.template.v1+json"
+  },
+  {
+    "cmd": "updateAttributeTemplate",
+    "cmdType": "unsecured",
+    "call": "/attributes/v1/attributeTemplates/{attributeTemplateId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.attribute.template.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.attribute.template.v1+json"
+  }
+]

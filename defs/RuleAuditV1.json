@@ -1,0 +1,38 @@
+[{
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  }, {
+    "cmd": "getRuleAudits",
+    "call": "/ruleaudit/v1/ruleAudits",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.messaging.ruleAudit.v1+json"
+  }, {
+    "cmd": "createRuleAudit",
+    "call": "/ruleaudit/v1/ruleAudits",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.messaging.ruleAudit.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.messaging.ruleAudit.v1+json"
+  }, {
+    "cmd": "getRuleAudit",
+    "call": "/ruleaudit/v1/ruleAudits/{ruleAuditId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.messaging.ruleAudit.v1+json"
+  }, {
+    "cmd": "updateRuleAudit",
+    "call": "/ruleaudit/v1/ruleAudits/{ruleAuditId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.messaging.ruleAudit.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.messaging.ruleAudit.v1+json"
+  }, {
+    "cmd": "deleteRuleAudit",
+    "call": "/ruleaudit/v1/ruleAudits/{ruleAuditId}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.messaging.ruleAudit.v1+json"
+  }, {
+    "cmd": "countRuleAudits",
+    "call": "/ruleaudit/v1/ruleAudits/count",
+    "type": "GET",
+    "accepts": "text/plain"
+  }
+]

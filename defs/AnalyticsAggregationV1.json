@@ -1,0 +1,12 @@
+[{
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  }, {
+    "cmd": "searchAggregationByDefinitionId",
+    "call": "/analyticsaggregation/v1/analyticsAggregations?analyticsDefinitionId={analyticsDefinitionId}&sortBy=-creation",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.analytics.analyticsaggregation.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.analytics.analyticsaggregation.v1+json"
+  }
+]

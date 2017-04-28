@@ -1,0 +1,19 @@
+{
+  "name": "@covisint/covisint.js-calldefs",
+  "version": "0.0.3",
+  "description": "",
+  "keywords": [],
+  "author": "Covisint Corp",
+  "repository": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "files": [
+    "dist/"
+  ],
+  "devDependencies": {
+    "grunt": "^0.4.1",
+    "grunt-bump": "0.7.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.1",
+    "matchdep": "^1.0.0"
+  }
+}

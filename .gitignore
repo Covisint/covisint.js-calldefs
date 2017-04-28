@@ -1,0 +1,14 @@
+.DS_store
+**/.DS_store
+
+.grunt/
+bower_components
+node_modules
+
+*.sublime*
+
+*.seed
+*.log
+*.out
+*.pid
+*.gz

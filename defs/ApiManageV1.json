@@ -1,0 +1,105 @@
+[
+  {
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  },
+  {
+    "cmd": "getClientApplications",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/clientApplications",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.api.clientApplication.v1+json;includeSecret=true"
+  },
+  {
+    "cmd": "createClientApplication",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/clientApplications",
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.api.clientApplication.v1+json",
+    "contentType": "application/vnd.com.covisint.api.clientApplication.v1+json"
+  },
+  {
+    "cmd": "getClientApplication",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/clientApplications/{clientId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.api.clientApplication.v1+json;includeSecret=true"
+  },
+  {
+    "cmd": "updateClientApplication",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/clientApplications/{clientId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.api.clientApplication.v1+json",
+    "contentType": "application/vnd.com.covisint.api.clientApplication.v1+json"
+  },
+  {
+    "cmd": "deleteClientApplication",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/clientApplications/{clientId}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.api.clientApplication.v1+json",
+    "contentType": "application/vnd.com.covisint.api.clientApplication.v1+json"
+  },
+  {
+    "cmd": "getClientApplicationOauth",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/clientApplications/{clientId}/oauthConfiguration",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.api.oauth.configuration.v1+json"
+  },
+  {
+    "cmd": "updateClientApplicationOauth",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/clientApplications/{clientId}/oauthConfiguration",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.api.oauth.configuration.v1+json",
+    "contentType": "application/vnd.com.covisint.api.oauth.configuration.v1+json"
+  },
+  {
+    "cmd": "getClientApplicationScopes",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/clientApplications/{clientId}/scopes",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.api.oauth.scopes.v1+json"
+  },
+  {
+    "cmd": "updateClientApplicationScope",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/clientApplications/{clientId}/scopes",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.api.oauth.scopes.v1+json",
+    "contentType": "application/vnd.com.covisint.api.oauth.scopes.v1+json"
+  },
+  {
+    "cmd": "getSolutionInstanceOauth",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/oauthConfiguration",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.api.oauth.configuration.v1+json"
+  },
+  {
+    "cmd": "updateSolutionInstanceOauth",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/oauthConfiguration",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.api.oauth.configuration.v1+json",
+    "contentType": "application/vnd.com.covisint.api.oauth.configuration.v1+json"
+  },
+  {
+    "cmd": "getSolutionInstanceScopes",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/scopes",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.api.oauth.scopes.v1+json"
+  },
+  {
+    "cmd": "updateSolutionInstanceScope",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/scopes",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.api.oauth.scopes.v1+json",
+    "contentType": "application/vnd.com.covisint.api.oauth.scopes.v1+json"
+  },
+  {
+    "cmd": "getSolutionInstanceScopeDescriptions",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/scopeDescriptions/default",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.api.oauth.scopeDescriptions.v1+json"
+  },
+  {
+    "cmd": "updateSolutionInstanceScopeDescription",
+    "call": "/apimanage/v1/solutionInstances/{solutionInstanceId}/scopeDescriptions/default",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.api.oauth.scopeDescriptions.v1+json",
+    "contentType": "application/vnd.com.covisint.api.oauth.scopeDescriptions.v1+json"
+  }
+]

@@ -1,0 +1,18 @@
+[{
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  }, {
+    "cmd": "searchEvents",
+    "call": "/eventsearch/v1/events/search?startTime={startTime}&endTime={endTime}",
+    "type": "GET",
+    "accepts": "application/json",
+    "contentType": "application/x-www-form-urlencoded"
+  }, {
+    "cmd": "countEvents",
+    "call": "/eventsearch/v1/events/count?startTime={startTime}&endTime={endTime}",
+    "type": "GET",
+    "accepts": "application/json",
+    "contentType": "application/x-www-form-urlencoded"
+  }
+]

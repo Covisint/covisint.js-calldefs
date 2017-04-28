@@ -1,0 +1,39 @@
+[{
+    "version": "0.0.3",
+    "cmd": "_v",
+    "call": "/v"
+  }, {
+    "cmd": "getApplications",
+    "call": "/application/v1/applications",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.application.v1+json"
+  }, {
+    "cmd": "createApplication",
+    "call": "/application/v1/applications",
+    "delayForIndex": true,
+    "type": "POST",
+    "accepts": "application/vnd.com.covisint.platform.application.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.application.v1+json"
+  }, {
+    "cmd": "getApplication",
+    "call": "/application/v1/applications/{applicationId}",
+    "type": "GET",
+    "accepts": "application/vnd.com.covisint.platform.application.v1+json"
+  }, {
+    "cmd": "updateApplication",
+    "call": "/application/v1/applications/{applicationId}",
+    "type": "PUT",
+    "accepts": "application/vnd.com.covisint.platform.application.v1+json",
+    "contentType": "application/vnd.com.covisint.platform.application.v1+json"
+  }, {
+    "cmd": "deleteApplication",
+    "call": "/application/v1/applications/{applicationId}",
+    "type": "DELETE",
+    "accepts": "application/vnd.com.covisint.platform.application.v1+json"
+  }, {
+    "cmd": "countApplications",
+    "call": "/application/v1/applications/count",
+    "type": "GET",
+    "accepts": "text/plain"
+  }
+]
